@@ -1,0 +1,40 @@
+/**
+* helpers
+*/
+
+@use 'sass:map';
+@use '../abstracts/variables' as vars;
+@use '../abstracts/functions' as func;
+@use '../abstracts/mediaqueries' as media;
+
+.hide{
+    display: none;
+}
+
+//creates a specific sponsor class with background-image according (each)
+@each $sponsor in vars.$sponsors{
+    .sponsor-#{$sponsor}{
+        background-image: url('../assets/sponsors/#{$sponsor}.png');
+        height: func.pxtorem(44);
+        width: func.pxtorem(88);
+        background-size: cover;
+        margin-top: func.pxtorem(20);
+        margin-right: func.pxtorem(15);
+        @include media.ultra-large{margin-right: func.pxtorem(30);};
+        opacity: .75;
+    }
+}
+
+//Helper classes for grid (for)
+
+@for $i from 1 through vars.$grid-columns {
+    .col-#{$i} {
+        grid-column: span $i;
+    }
+}
+
+@for $i from 1 through vars.$grid-rows {
+    .row-#{$i} {
+        grid-row: span $i;
+    }
+}

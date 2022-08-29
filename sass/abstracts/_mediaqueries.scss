@@ -1,0 +1,46 @@
+/**
+* Media queries
+*/
+@use '../abstracts/variables' as vars;
+
+
+@mixin small{
+    @media (min-width: 0px) and (max-width: #{vars.$small-width - 1px}) {
+      @content;
+    }
+  }
+
+@mixin medium{
+    @media (min-width: #{vars.$small-width}) and (max-width: #{vars.$medium-width - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin large{
+    @media (min-width: #{vars.$medium-width}) and (max-width: #{vars.$large-width - 1px}){
+      @content;
+    }
+  }
+
+  @mixin very-large{
+    @media (min-width: #{vars.$large-width}) and (max-width: #{vars.$xl-width - 1px}){
+      @content;
+    }
+  }
+
+  @mixin extra-large{
+    @media (min-width: #{vars.$xl-width}) and (max-width: #{vars.$xxl-width - 1px}){
+      @content;
+    }
+  }
+
+  @mixin ultra-large{
+    @media (min-width: #{vars.$xxl-width - 1px}){
+      @content;
+    }
+  }
+
+
+
+
+ 

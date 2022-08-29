@@ -1,0 +1,97 @@
+@use '../abstracts/variables'as vars;
+@use '../abstracts/functions'as func;
+@use '../abstracts/mixins'as mixin;
+@use '../abstracts/extends';
+@use '../abstracts/mediaqueries'as media;
+
+@use 'sass:map';
+
+.footer {
+    padding: func.pxtorem(125);
+    height: func.pxtorem(680);
+    background-color: map.get($map: vars.$colors, $key:color4);
+
+    @include media.small {height: func.pxtorem(1025);padding: 0;padding-top: func.pxtorem(20);}
+    @include media.medium {height: func.pxtorem(850);padding: 0;padding-top: func.pxtorem(20);}
+    @include media.large {height: func.pxtorem(950);padding: 0;padding-top: func.pxtorem(60);}
+
+    &__icons {
+        display: flex;
+    }
+
+    &__icon {
+        @extend %flex-center-wrap;
+        @include mixin.circle(
+            vars.$icon-size,
+            map.get($map: vars.$secondary-colors, $key:black)
+            );
+            
+        margin: 0 func.pxtorem(14) func.pxtorem(28) func.pxtorem(14);
+
+        i {
+            color: map.get($map: vars.$secondary-colors, $key:white);
+        }
+
+        transition: 0.2s;
+
+        &:hover {
+            background-color: map.get($map: vars.$secondary-colors, $key:hover);
+            cursor: pointer;
+        }
+    }
+
+    &__info {
+        display: flex;
+        margin-top: func.pxtorem(90);
+
+        @include media.small {flex-direction: column;margin-top: func.pxtorem(20);}
+        @include media.medium {flex-direction: column;margin-top: func.pxtorem(40);}
+        @include media.large {flex-direction: column;}
+
+        div {
+            @extend %flex-column-start;
+            width: func.pxtorem(520);
+
+            @include media.small {width: func.pxtorem(300);margin-left: func.pxtorem(20);}
+            @include media.medium {width: func.pxtorem(600);margin-left: func.pxtorem(20);}
+            @include media.large {width: func.pxtorem(600);margin-left: func.pxtorem(20);}
+
+            padding-right: func.pxtorem(10);
+            margin-bottom: func.pxtorem(10);
+
+            h4 {
+                margin-bottom: func.pxtorem(20);
+            }
+
+            a {
+                font-family: vars.$footer-font;
+                color: map.get($map: vars.$secondary-colors, $key:footer-color);
+                font-weight: 500;
+                font-size: func.pxtorem(18);
+                margin-bottom: func.pxtorem(10);
+                transition: 0.2s;
+
+                &:hover {
+                    color: map.get($map: vars.$secondary-colors, $key:white);
+                }
+            }
+
+            p {
+                color: map.get($map: vars.$secondary-colors, $key:white);
+                font-weight: 500;
+                margin-bottom: func.pxtorem(40);
+            }
+
+        }
+    }
+
+    &__sponsors {
+        @extend %flex-row;
+        padding-bottom: func.pxtorem(20);
+
+        @include media.small {justify-content: center;}
+        @include media.medium {justify-content: center;}
+        @include media.large {justify-content: center;}
+    }
+
+}

@@ -1,0 +1,124 @@
+@use '../abstracts/variables'as vars;
+@use '../abstracts/functions'as func;
+@use '../abstracts/mixins'as mixin;
+@use '../abstracts/extends';
+@use '../abstracts/mediaqueries'as media;
+
+@use 'sass:map';
+
+
+header {
+    #navWrapper {
+        height: func.pxtorem(210);
+        background-repeat: repeat;
+        background-size: auto func.pxtorem(220);
+        background-image: url(map.get($map:vars.$images,$key: backgroundNav));
+
+        .nav {
+            @extend %flex-space-between-wrap-row;
+
+            .nav-right {
+                display: flex;
+
+                .language {
+                    @extend %flex-flex-end;
+                }
+            }
+
+            &__logo {
+                background-image: url(map.get($map:vars.$images,$key:logo));
+                height: func.pxtorem(100);
+                width: func.pxtorem(220);
+                background-size: cover;
+                margin: 0 0 func.pxtorem(45) func.pxtorem(28);
+
+                @include media.small {
+                    width: func.pxtorem(145);
+                    background-size: func.pxtorem(145) func.pxtorem(100);
+                }
+            }
+
+            &__list {
+                display: flex;
+
+                @include media.small {display: none;}
+                @include media.medium {display: none;}
+                @include media.large {display: none;}
+
+                @include mixin.linearGradient2Colors(
+                    270deg,
+                    map.get($map: vars.$colors, $key:color3),
+                    map.get($map: vars.$colors, $key:color2)
+                    );
+
+                height: func.pxtorem(55);
+
+                span {
+                    &:hover {
+                        color: map.get($map:vars.$secondary-colors, $key:white);
+                        background-color: map.get($map:vars.$secondary-colors, $key:hover);
+                    }
+                }
+            }
+
+            &__list-language {
+                @extend %flex-flex-end;
+
+                @include media.small {display: none}
+                @include media.medium {display: none}
+                @include media.large {display: none}
+
+                background-color: map.get($map: vars.$colors, $key:color3);
+                height: func.pxtorem(35)
+            }
+
+            &__item {
+                @extend %flex-center-wrap;
+                padding: 0 func.pxtorem(7) 0 func.pxtorem(14);
+            }
+
+            &__item-language {
+                @extend %flex-center-wrap;
+                width: func.pxtorem(35);
+
+                &--active {
+                    @extend .nav__item-language;
+                    background-color: map.get($map:vars.$secondary-colors, $key:white);
+                }
+            }
+
+            &__link {
+                color: map.get($map:vars.$secondary-colors, $key:white);
+                font-size: func.pxtorem(24);
+
+                &:hover {
+                    color: map.get($map:vars.$secondary-colors, $key:black);
+                }
+
+                &--active {
+                    @extend .nav__link;
+                    color: map.get($map:vars.$secondary-colors, $key:black);
+
+                }
+            }
+
+            &__link-language {
+                color: map.get($map:vars.$secondary-colors, $key:white);
+                font-size: func.pxtorem(18);
+
+                &:hover {
+                    color: map.get($map:vars.$secondary-colors, $key:black);
+                }
+
+                &--active {
+                    color: map.get($map:vars.$secondary-colors, $key:black);
+                }
+            }
+
+            &__search {
+                margin-right: func.pxtorem(30);
+                @extend %flex-flex-end;
+            }
+        }
+    }
+}

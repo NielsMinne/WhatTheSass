@@ -1,0 +1,67 @@
+@use 'sass:math';
+@use 'sass:map';
+@use '../abstracts/variables' as vars;
+@use '../abstracts/functions' as func;
+@use '../abstracts/mediaqueries' as media;
+
+//marquee specific for the home page
+
+main {
+    .marquee-wrapper {
+        width: 98vw;
+        height: func.pxtorem(55);
+        background-color: map.get($map:vars.$colors, $key:color2);
+        margin: func.pxtorem(15) auto;
+
+        .marquee {
+            max-width: func.pxtorem(1830);
+            margin: 0 auto;
+            overflow: hidden;
+
+            &__div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: func.pxtorem(55);
+                width: func.pxtorem(3775);
+                animation: marquee 30s linear infinite;
+                &:hover {
+                    animation-play-state: paused;
+                }
+
+            }
+
+            &__content {
+                white-space: nowrap;
+
+                div {
+                    padding: 0 func.pxtorem(15);
+                    font-size: func.pxtorem(20);
+                    display: inline-block;
+
+                    span {
+                        padding: 0;
+                        background: none;
+                    }
+
+                    a {
+                        color: map.get($map:vars.$secondary-colors, $key:white);
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }

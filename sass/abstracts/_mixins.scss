@@ -1,0 +1,19 @@
+/**
+* Mixins
+*/
+
+@mixin linearGradient2Colors($degree,$from,$to){
+    background-image: linear-gradient($degree, $from, $to);
+  }
+  
+@mixin linearGradient3Colors($degree,$from,$midTone,$to){
+    background-image: linear-gradient($degree, $from 0%,$midTone 50%, $to 100%);
+  }
+  
+@mixin circle($width, $color){
+    height: $width;
+    width: $width;
+    background-color: $color;
+    border-radius: $width/2;
+  }
+  

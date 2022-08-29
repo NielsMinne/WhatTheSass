@@ -1,0 +1,46 @@
+/**
+* Button Components
+*/
+
+@use '../abstracts/variables'as vars;
+@use '../abstracts/functions'as func;
+@use '../abstracts/mediaqueries'as media;
+@use 'sass:map';
+
+
+.nav {
+    &__button {
+        height: func.pxtorem(56);
+        width: func.pxtorem(56);
+        background-color: map.get($map:vars.$colors, $key:color2);
+        color: map.get($map:vars.$secondary-colors, $key:white);
+        transition: 0.2s;
+        border: none;
+
+        &:hover {
+            color: map.get($map:vars.$colors, $key:color2);
+            background-color: map.get($map:vars.$secondary-colors, $key:white);
+        }
+
+        &--hamburger {
+            @extend .nav__button;
+            @include media.very-large{display: none;}
+            @include media.extra-large{display: none;}
+            @include media.ultra-large{display: none;}
+
+            color: map.get($map:vars.$colors, $key:color4);
+            background-color: map.get($map:vars.$secondary-colors, $key:white);
+        }
+    }
+}
+
+footer {
+    .footer-button {
+        color: map.get($map:vars.$colors, $key:color4);
+        height: func.pxtorem(50);
+        width: func.pxtorem(140);
+        font-weight: vars.$font-weight;
+        font-size: func.pxtorem(20);
+        cursor: pointer;
+    }
+}

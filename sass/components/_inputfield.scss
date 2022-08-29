@@ -1,0 +1,55 @@
+/**
+* Inputfield components
+*/
+
+@use '../abstracts/extends';
+@use '../abstracts/functions' as func;
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mediaqueries' as media;
+@use 'sass:map';
+
+
+
+.nav-search{
+    background-color: map.get($map:vars.$secondary-colors,$key:white);
+    input{
+        height: 100%;
+        width: func.pxtorem(500);
+        @include media.small{width: func.pxtorem(180);}
+        @include media.medium{width: func.pxtorem(220);}
+        color: map.get($map:vars.$secondary-colors,$key:black);
+        padding-left: func.pxtorem(20);
+        font-family: vars.$footer-font;
+        font-size: func.pxtorem(20);
+        border: none;
+    }
+}
+
+footer{
+    .footer-subscribe{
+        @extend %flex-row;
+        @include media.small{
+            flex-direction: column;
+            margin: 0;
+        }
+        @include media.small{
+            flex-direction: row;
+            margin: 0;
+        }
+        input{
+            background: none;
+            outline: none;
+            border: 1px solid map.get($map:vars.$secondary-colors,$key:white);
+            height: func.pxtorem(50);
+            width: func.pxtorem(340);
+            padding-left: func.pxtorem(10);
+            color: map.get($map:vars.$secondary-colors,$key:white);
+            font-family: vars.$footer-font;
+            &::placeholder{
+                color: map.get($map:vars.$secondary-colors,$key:white);
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,68 @@
+/**
+* Variables
+*/
+
+//Fonts
+$text-font: 'rift',sans-serif;
+$footer-font: 'calibri',sans-serif;
+
+//weight
+$font-weight: 700;
+
+//Sizes
+$font-size-p: 18;
+$font-size-h2: 36;
+$font-size-h4: 20;
+
+$icon-size:50px;
+ 
+//variables to use in grid.scss for columns and rows 
+$grid-columns: 12;
+$grid-rows:7;
+
+//Media Query Variables
+$small-width: 768px;
+$medium-width: 958px;
+$large-width:1200px;
+$xl-width:1438px;
+$xxl-width:1680px;
+
+//Color Variables
+$colors: (color1: #00FFFF,
+color2: #643cfa,
+color3: #ffa29c,
+color4: #000099,
+color5:#ff690a
+) !default;
+
+$secondary-colors: (white:#FFF,
+black: #000,
+hover:#1a1a1a,
+footer-color: rgba(255, 255, 255, 0.75));
+
+//Images variables
+$images:(logo: '../assets/logo.svg',
+backgroundNav: '../assets/header_background.svg'
+);
+
+$max-images: 15; //Amount of images for a for loop --> adding image = change
+$card-images:(
+  1: '../assets/cards/maneskin.jpg',
+  2: '../assets/cards/placebo.png',
+  3: '../assets/cards/pixies.jpg',
+  4: '../assets/cards/werchter_boutique.png',
+  5: '../assets/cards/the_killers.jpg',
+  6: '../assets/cards/imagine_dragons.jpg',
+  7: '../assets/cards/tweet.jpg',
+  8: '../assets/cards/peace.jpg',
+  9: '../assets/cards/sunglass_girl.jpg',
+  10: '../assets/cards/red_hot_chili_peppers.jpg',
+  11: '../assets/cards/twenty_one_pilots.jpg',
+  12: '../assets/cards/metallica.jpg',
+  13: '../assets/cards/pearl_jam.png',
+  14: '../assets/cards/united.png',
+  15: '../assets/cards/tweet.jpg'
+  );
+
+//Variable to make the sponsors with an each loop  
+$sponsors: "kbc","jupiler","coca-cola","proximus","deloitte","bacardi","winforlife","stubru","demorgen","humo","canvas","pickx";

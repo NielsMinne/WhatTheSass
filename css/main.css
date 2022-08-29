@@ -1,0 +1,2410 @@
+@import url("https://use.typekit.net/hkv0lvk.css");
+/**
+* Variables
+*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+* Functions
+*/
+/**
+* Base
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFF;
+  height: 100%;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  padding: 0 0.875rem;
+  background-color: #000;
+  color: #FFF;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+/**
+* Media queries
+*/
+/**
+* helpers
+*/
+.hide {
+  display: none;
+}
+
+.sponsor-kbc {
+  background-image: url("../assets/sponsors/kbc.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-kbc {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-jupiler {
+  background-image: url("../assets/sponsors/jupiler.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-jupiler {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-coca-cola {
+  background-image: url("../assets/sponsors/coca-cola.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-coca-cola {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-proximus {
+  background-image: url("../assets/sponsors/proximus.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-proximus {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-deloitte {
+  background-image: url("../assets/sponsors/deloitte.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-deloitte {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-bacardi {
+  background-image: url("../assets/sponsors/bacardi.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-bacardi {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-winforlife {
+  background-image: url("../assets/sponsors/winforlife.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-winforlife {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-stubru {
+  background-image: url("../assets/sponsors/stubru.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-stubru {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-demorgen {
+  background-image: url("../assets/sponsors/demorgen.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-demorgen {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-humo {
+  background-image: url("../assets/sponsors/humo.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-humo {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-canvas {
+  background-image: url("../assets/sponsors/canvas.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-canvas {
+    margin-right: 1.875rem;
+  }
+}
+
+.sponsor-pickx {
+  background-image: url("../assets/sponsors/pickx.png");
+  height: 2.75rem;
+  width: 5.5rem;
+  background-size: cover;
+  margin-top: 1.25rem;
+  margin-right: 0.9375rem;
+  opacity: 0.75;
+}
+@media (min-width: 1679px) {
+  .sponsor-pickx {
+    margin-right: 1.875rem;
+  }
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+.row-1 {
+  grid-row: span 1;
+}
+
+.row-2 {
+  grid-row: span 2;
+}
+
+.row-3 {
+  grid-row: span 3;
+}
+
+.row-4 {
+  grid-row: span 4;
+}
+
+.row-5 {
+  grid-row: span 5;
+}
+
+.row-6 {
+  grid-row: span 6;
+}
+
+.row-7 {
+  grid-row: span 7;
+}
+
+/**
+* Typography
+*/
+body {
+  font-family: "rift", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.125rem;
+  font-family: "calibri", sans-serif;
+}
+
+h2 {
+  font-size: 2.25rem;
+  color: #FFF;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #FFF;
+}
+
+/**
+* Mixins
+*/
+/**
+* Extends
+*/
+header #navWrapper .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+header #navWrapper .nav__item, header #navWrapper .nav__item-language, header #navWrapper .nav__item-language--active, .footer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header #navWrapper .nav .nav-right .language, header #navWrapper .nav__list-language, header #navWrapper .nav__search {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__info div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .footer-subscribe, .footer__sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer {
+  padding: 7.8125rem;
+  height: 42.5rem;
+  background-color: #000099;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .footer {
+    height: 64.0625rem;
+    padding: 0;
+    padding-top: 1.25rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 957px) {
+  .footer {
+    height: 53.125rem;
+    padding: 0;
+    padding-top: 1.25rem;
+  }
+}
+@media (min-width: 958px) and (max-width: 1199px) {
+  .footer {
+    height: 59.375rem;
+    padding: 0;
+    padding-top: 3.75rem;
+  }
+}
+.footer__icons {
+  display: flex;
+}
+.footer__icon {
+  height: 50px;
+  width: 50px;
+  background-color: #000;
+  border-radius: 25px;
+  margin: 0 0.875rem 1.75rem 0.875rem;
+  transition: 0.2s;
+}
+.footer__icon i {
+  color: #FFF;
+}
+.footer__icon:hover {
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+.footer__info {
+  display: flex;
+  margin-top: 5.625rem;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .footer__info {
+    flex-direction: column;
+    margin-top: 1.25rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 957px) {
+  .footer__info {
+    flex-direction: column;
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 958px) and (max-width: 1199px) {
+  .footer__info {
+    flex-direction: column;
+  }
+}
+.footer__info div {
+  width: 32.5rem;
+  padding-right: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .footer__info div {
+    width: 18.75rem;
+    margin-left: 1.25rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 957px) {
+  .footer__info div {
+    width: 37.5rem;
+    margin-left: 1.25rem;
+  }
+}
+@media (min-width: 958px) and (max-width: 1199px) {
+  .footer__info div {
+    width: 37.5rem;
+    margin-left: 1.25rem;
+  }
+}
+.footer__info div h4 {
+  margin-bottom: 1.25rem;
+}
+.footer__info div a {
+  font-family: "calibri", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
+  transition: 0.2s;
+}
+.footer__info div a:hover {
+  color: #FFF;
+}
+.footer__info div p {
+  color: #FFF;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.footer__sponsors {
+  padding-bottom: 1.25rem;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .footer__sponsors {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 957px) {
+  .footer__sponsors {
+    justify-content: center;
+  }
+}
+@media (min-width: 958px) and (max-width: 1199px) {
+  .footer__sponsors {
+    justify-content: center;
+  }
+}
+
+header #navWrapper {
+  height: 13.125rem;
+  background-repeat: repeat;
+  background-size: auto 13.75rem;
+  background-image: url("../assets/header_background.svg");
+}
+header #navWrapper .nav .nav-right {
+  display: flex;
+}
+header #navWrapper .nav__logo {
+  background-image: url("../assets/logo.svg");
+  height: 6.25rem;
+  width: 13.75rem;
+  background-size: cover;
+  margin: 0 0 2.8125rem 1.75rem;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  header #navWrapper .nav__logo {
+    width: 9.0625rem;
+    background-size: 9.0625rem 6.25rem;
+  }
+}
+header #navWrapper .nav__list {
+  display: flex;
+  background-image: linear-gradient(270deg, #ffa29c, #643cfa);
+  height: 3.4375rem;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  header #navWrapper .nav__list {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 957px) {
+  header #navWrapper .nav__list {
+    display: none;
+  }
+}
+@media (min-width: 958px) and (max-width: 1199px) {
+  header #navWrapper .nav__list {
+    display: none;
+  }
+}
+header #navWrapper .nav__list span:hover {
+  color: #FFF;
+  background-color: #1a1a1a;
+}
+header #navWrapper .nav__list-language {
+  background-color: #ffa29c;
+  height: 2.1875rem;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  header #navWrapper .nav__list-language {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 957px) {
+  header #navWrapper .nav__list-language {
+    display: none;
+  }
+}
+@media (min-width: 958px) and (max-width: 1199px) {
+  header #navWrapper .nav__list-language {
+    display: none;
+  }
+}
+header #navWrapper .nav__item {
+  padding: 0 0.4375rem 0 0.875rem;
+}
+header #navWrapper .nav__item-language, header #navWrapper .nav__item-language--active {
+  width: 2.1875rem;
+}
+header #navWrapper .nav__item-language--active {
+  background-color: #FFF;
+}
+header #navWrapper .nav__link, header #navWrapper .nav__link--active {
+  color: #FFF;
+  font-size: 1.5rem;
+}
+header #navWrapper .nav__link:hover, header #navWrapper .nav__link--active:hover {
+  color: #000;
+}
+header #navWrapper .nav__link--active {
+  color: #000;
+}
+header #navWrapper .nav__link-language {
+  color: #FFF;
+  font-size: 1.125rem;
+}
+header #navWrapper .nav__link-language:hover {
+  color: #000;
+}
+header #navWrapper .nav__link-language--active {
+  color: #000;
+}
+header #navWrapper .nav__search {
+  margin-right: 1.875rem;
+}
+
+main .grid-wrapper .grid {
+  width: 98vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 16.25rem);
+  grid-auto-flow: dense;
+  grid-gap: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 22.9375rem);
+  }
+}
+@media (min-width: 768px) and (max-width: 957px) {
+  main .grid-wrapper .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(20, 26.875rem);
+  }
+}
+@media (min-width: 958px) and (max-width: 1199px) {
+  main .grid-wrapper .grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(16, 16.25rem);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1437px) {
+  main .grid-wrapper .grid {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(11, 16.25rem);
+  }
+}
+@media (min-width: 1438px) and (max-width: 1679px) {
+  main .grid-wrapper .grid {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 16.25rem);
+  }
+}
+main .grid-wrapper .grid__card-1 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-1 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-1 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-1 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image1, main .grid-wrapper .grid__image1--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/maneskin.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image1--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-2 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-2 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-2 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-2 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image2, main .grid-wrapper .grid__image2--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/placebo.png");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image2--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-3 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-3 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-3 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-3 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image3, main .grid-wrapper .grid__image3--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/pixies.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image3--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-4 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-4 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-4 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-4 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image4, main .grid-wrapper .grid__image4--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/werchter_boutique.png");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image4--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-5 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-5 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-5 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-5 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-5 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image5, main .grid-wrapper .grid__image5--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/the_killers.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image5--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-6 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-6 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-6 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-6 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-6 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image6, main .grid-wrapper .grid__image6--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/imagine_dragons.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image6--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-7 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-7 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-7 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-7 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-7 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image7, main .grid-wrapper .grid__image7--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/tweet.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image7--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-8 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-8 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-8 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-8 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-8 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image8, main .grid-wrapper .grid__image8--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/peace.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image8--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-9 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-9 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-9 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-9 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-9 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image9, main .grid-wrapper .grid__image9--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/sunglass_girl.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image9--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-10 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-10 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-10 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-10 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-10 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image10, main .grid-wrapper .grid__image10--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/red_hot_chili_peppers.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image10--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-11 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-11 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-11 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-11 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-11 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image11, main .grid-wrapper .grid__image11--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/twenty_one_pilots.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image11--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-12 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-12 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-12 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-12 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-12 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image12, main .grid-wrapper .grid__image12--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/metallica.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image12--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-13 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-13 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-13 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-13 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-13 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image13, main .grid-wrapper .grid__image13--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/pearl_jam.png");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image13--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-14 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-14 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-14 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-14 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-14 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image14, main .grid-wrapper .grid__image14--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/united.png");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image14--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__card-15 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .grid-wrapper .grid__card-15 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+main .grid-wrapper .grid__card-15 p {
+  background-color: #000;
+  color: #00FFFF;
+  font-family: "rift", sans-serif;
+  position: absolute;
+  z-index: 2;
+  top: 1.5625rem;
+  left: 1.5625rem;
+  padding: 0.25rem 0.5rem;
+}
+main .grid-wrapper .grid__card-15 h2 {
+  background-image: linear-gradient(270deg, #00FFFF 0%, #643cfa 50%, #ff690a 100%);
+  z-index: 2;
+  width: 95%;
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  padding: 0.4375rem;
+  margin: 0 auto;
+}
+main .grid-wrapper .grid__card-15 h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .grid-wrapper .grid__image15, main .grid-wrapper .grid__image15--zoom {
+  transition: all 0.2s ease-in-out;
+  background-image: url("../assets/cards/tweet.jpg");
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+}
+main .grid-wrapper .grid__image15--zoom:hover {
+  transform: scale(1.1);
+}
+main .grid-wrapper .grid__message {
+  background-color: #ff690a;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  margin: 1.375rem;
+}
+main .grid-wrapper .grid__message div {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0.875rem auto;
+}
+main .grid-wrapper .grid__message div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+main .grid-wrapper .grid__message div p a {
+  color: #000;
+  text-decoration: underline;
+}
+main .grid-wrapper .grid__message div .twitter-name {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main .grid-wrapper .grid__message div .twitter-name a {
+  font-family: "calibri", sans-serif;
+  color: #000;
+}
+
+/**
+* Button Components
+*/
+.nav__button, .nav__button--hamburger {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #643cfa;
+  color: #FFF;
+  transition: 0.2s;
+  border: none;
+}
+.nav__button:hover, .nav__button--hamburger:hover {
+  color: #643cfa;
+  background-color: #FFF;
+}
+.nav__button--hamburger {
+  color: #000099;
+  background-color: #FFF;
+}
+@media (min-width: 1200px) and (max-width: 1437px) {
+  .nav__button--hamburger {
+    display: none;
+  }
+}
+@media (min-width: 1438px) and (max-width: 1679px) {
+  .nav__button--hamburger {
+    display: none;
+  }
+}
+@media (min-width: 1679px) {
+  .nav__button--hamburger {
+    display: none;
+  }
+}
+
+footer .footer-button {
+  color: #000099;
+  height: 3.125rem;
+  width: 8.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/**
+* Inputfield components
+*/
+.nav-search {
+  background-color: #FFF;
+}
+.nav-search input {
+  height: 100%;
+  width: 31.25rem;
+  color: #000;
+  padding-left: 1.25rem;
+  font-family: "calibri", sans-serif;
+  font-size: 1.25rem;
+  border: none;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .nav-search input {
+    width: 11.25rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 957px) {
+  .nav-search input {
+    width: 13.75rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  footer .footer-subscribe {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  footer .footer-subscribe {
+    flex-direction: row;
+    margin: 0;
+  }
+}
+footer .footer-subscribe input {
+  background: none;
+  outline: none;
+  border: 1px solid white;
+  height: 3.125rem;
+  width: 21.25rem;
+  padding-left: 0.625rem;
+  color: white;
+  font-family: "calibri", sans-serif;
+}
+footer .footer-subscribe input::placeholder {
+  color: #FFF;
+}
+
+main .marquee-wrapper {
+  width: 98vw;
+  height: 3.4375rem;
+  background-color: #643cfa;
+  margin: 0.9375rem auto;
+}
+main .marquee-wrapper .marquee {
+  max-width: 114.375rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+main .marquee-wrapper .marquee__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.4375rem;
+  width: 235.9375rem;
+  animation: marquee 30s linear infinite;
+}
+main .marquee-wrapper .marquee__div:hover {
+  animation-play-state: paused;
+}
+main .marquee-wrapper .marquee__content {
+  white-space: nowrap;
+}
+main .marquee-wrapper .marquee__content div {
+  padding: 0 0.9375rem;
+  font-size: 1.25rem;
+  display: inline-block;
+}
+main .marquee-wrapper .marquee__content div span {
+  padding: 0;
+  background: none;
+}
+main .marquee-wrapper .marquee__content div a {
+  color: #FFF;
+}
+main .marquee-wrapper .marquee__content div a:hover {
+  text-decoration: underline;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

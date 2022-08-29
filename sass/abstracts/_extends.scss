@@ -1,0 +1,39 @@
+/**
+* Extends
+*/
+
+
+//Flex extends
+%flex-space-between-wrap-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  
+%flex-center-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+%flex-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+%flex-column-start{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+%flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
